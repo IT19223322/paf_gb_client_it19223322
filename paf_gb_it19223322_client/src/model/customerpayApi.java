@@ -20,16 +20,16 @@ public class customerpayApi extends HttpServlet {
     
     public customerpayApi() {
         super();
-        // TODO Auto-generated constructor stub
+        
     }
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
-	//doPost complete
+	//doPost 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		 String output = cusObj.insertCustomerpay(request.getParameter("Card_No"), 
@@ -41,7 +41,7 @@ public class customerpayApi extends HttpServlet {
 		
 	}
 
-	//doPut not complete
+	//doPut 
 	protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		 Map paras = getParasMap(request); 
